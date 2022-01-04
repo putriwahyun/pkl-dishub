@@ -39,18 +39,17 @@
                         <div class="text-center">
                             <h1 class="h4 text-gray-900 mb-4">Login</h1>
                         </div>
-                        <form class="user">
+                        <form class="user" method="post" action="cek-login.php">
                             <div class="form-group">
-                                <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
+                                <input type="text" class="form-control form-control-user" name="user" placeholder="Username">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                <input type="password" class="form-control form-control-user" name="pass" placeholder="Password">
                             </div>
-                            <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                Login
-                            </a>
+                            <div class="btn btn-primary btn-user btn-block">
+                                <button type="submit" name="submit" style="border-style: none; background-color:mediumslateblue; border:none">Login</button>
+                            </div>
                         </form>
-                        <hr>
                     </div>
                 </div>
             </div>
