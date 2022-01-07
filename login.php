@@ -46,8 +46,8 @@
                             <div class="form-group">
                                 <input type="password" class="form-control form-control-user" name="pass" placeholder="Password">
                             </div>
-                            <div class="btn btn-primary btn-user btn-block">
-                                <button type="submit" name="submit" style="border-style: none; background-color:mediumslateblue; border:none">Login</button>
+                            <div >
+                                <button class="btn btn-primary btn-user btn-block" type="submit" name="submit" >Login</button>
                             </div>
                         </form>
                     </div>

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tambah Tamu</title>
+    <title>Riwayat Tamu</title>
 
     <!-- Custom fonts for this template -->
     <link href="asset/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -58,7 +58,7 @@
             </div> -->
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="tambah-tamu.php">
                     <i class="fa fa-address-card" aria-hidden="true"></i>
                     <span>Tambah Tamu</span>
@@ -66,7 +66,7 @@
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item ">
+            <li class="nav-item active">
                 <a class="nav-link" href="riwayat.php" :active="request()->riwayat.php">
                     <i class="fa fa-history" aria-hidden="true"></i>
                     <span>Riwayat Tamu</span>
@@ -271,7 +271,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Tambah Tamu</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Riwayat Tamu</h1>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -281,21 +281,31 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <h3 style="margin: auto;margin-left:10px;">Silahkan isi form di bawah ini</h3>
-                                    <div class="mb-3 mt-4 row" style="margin-left:20px;">
-                                        <label class="col-sm-1 col-form-label">Nama</label>
-                                        <div class="col-sm-3">
-                                            <input type="text" class="form-control" name="nama">
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 mt-4 row" style="margin-left:20px;">
-                                        <label class="col-sm-1 col-form-label">Harga</label>
-                                        <div class="col-sm-3">
-                                            <input type="text" class="form-control" name="harga">
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-success" type="submit" style="margin-left:20px;">Simpan</button>
-                                    </form>
+                                    <thead style="text-align: center;">
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Tanggal</th>
+                                            <th>Nama</th>
+                                            <th>Instansi</th>
+                                            <th>Keperluan</th>
+                                            <th>Tanda Tangan</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>
+                                                <i class="fa fa-trash mr-3" aria-hidden="true"></i>
+                                                <i class="fas fa-edit"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </div>
                         </div>

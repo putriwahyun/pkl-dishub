@@ -55,7 +55,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="tambah-tamu.php">
                     <i class="fa fa-address-card" aria-hidden="true"></i>
                     <span>Tambah Tamu</span>
                 </a>
@@ -63,7 +63,7 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="riwayat.php">
                     <i class="fa fa-history" aria-hidden="true"></i>
                     <span>Riwayat Tamu</span>
                 </a>
