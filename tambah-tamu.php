@@ -21,6 +21,30 @@
     <!-- Custom styles for this page -->
     <link href="asset/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
+    <!-- Signature -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css">
+   
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/jquery-ui.css" rel="stylesheet"> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="asset/js/jquery.signature.min.js"></script>
+    <script type="text/javascript" src="asset/js/jquery.ui.touch-punch.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="asset/css/jquery.signature.css">
+
+    <!-- Style Signature -->
+    <style>
+        .kbw-signature {
+            width: 385px;
+            height: 200px;
+        }
+
+        #sig canvas {
+            width: 100% !important;
+            height: auto;
+        }
+    </style>
+
 </head>
 
 <body id="page-top">
@@ -281,20 +305,29 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <h3 style="margin: auto;margin-left:10px;">Silahkan isi form di bawah ini</h3>
-                                    <div class="mb-3 mt-4 row" style="margin-left:20px;">
-                                        <label class="col-sm-1 col-form-label">Nama</label>
-                                        <div class="col-sm-3">
-                                            <input type="text" class="form-control" name="nama">
+                                    <form class="row g-3">
+                                        <div class="col-md-4 mb-3">
+                                            <label for="inputEmail4" class="form-label">Nama</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
                                         </div>
-                                    </div>
-                                    <div class="mb-3 mt-4 row" style="margin-left:20px;">
-                                        <label class="col-sm-1 col-form-label">Harga</label>
-                                        <div class="col-sm-3">
-                                            <input type="text" class="form-control" name="harga">
+                                        <div class="col-md-4 mb-3">
+                                            <label for="inputEmail4" class="form-label">Instansi</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
                                         </div>
-                                    </div>
-                                    <button class="btn btn-success" type="submit" style="margin-left:20px;">Simpan</button>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Keperluan</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+                                        <div class="col-md-12 mb-4">
+                                            <label class="" for="">Tanda Tangan:</label>
+                                            <br />
+                                            <div id="sig"></div>
+                                            <br />
+                                            <br>
+                                            <button class="btn btn-danger" id="clear">Hapus Tanda Tangan</button>
+                                            <textarea id="signature64" name="signed" style="display: none"></textarea>
+                                            <button type="submit" class="btn btn-primary">Simpan</button>
+                                        </div>
                                     </form>
                                 </table>
                             </div>
@@ -346,6 +379,18 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        var sig = $('#sig').signature({
+            syncField: '#signature64',
+            syncFormat: 'PNG'
+        });
+        $('#clear').click(function(e) {
+            e.preventDefault();
+            sig.signature('clear');
+            $("#signature64").val('');
+        });
+    </script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="asset/vendor/jquery/jquery.min.js"></script>
