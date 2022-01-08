@@ -12,7 +12,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Buat Janji Temu</title>
+    <title>Janji Temu Saya</title>
 
     <!-- Custom fonts for this template -->
     <link href="asset/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -139,9 +139,45 @@
                             <h6 class="m-0 font-weight-bold text-primary"></h6>
                         </div>
                         <div class="card-body">
-                            
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead style="text-align: center;">
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Tanggal Temu</th>
+                                            <th>Nama</th>
+                                            <th>Instansi</th>
+                                            <th>Hari</th>
+                                            <th>Jam</th>
+                                            <th>Keperluan</th>
+                                            <th>Keterangan</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>alay</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>
+                                                <i class="fa fa-trash mr-3" aria-hidden="true"></i>
+                                                <i class="fas fa-edit"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="h6">
+                                    Keterangan: <br>
+                                </div>
+                            </div>
                         </div>
-                        <!-- /.container-fluid -->
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
 
                         <!-- cara membuat janji temu -->
                         
