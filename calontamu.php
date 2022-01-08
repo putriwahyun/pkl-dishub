@@ -26,15 +26,15 @@
 
         <!-- Head -->
         <div class="head text-center">
-            <img src="asset/img/logo.png" width="250">
+            <img src="asset/img/logo.png" width="200">
             <h2 class="text-white"><b>Janji Temu Dinas Perhubungan<br>Kota Malang</b></h2>
         </div>
         <!-- end Head -->
 
-        <div class="row mt-4">
+        <div class="row mt-3">
             <div class="col-lg-4 mb-3 ml-8"></div>
             <div class="card shadow bg-gradient-light">
-                <div class="card-body" style="width:400px;">
+                <div class="card-body" style="width:400px;height:400px;">
                     <div class="p-5">
                         <div class="text-center">
                             <h1 class="h4 text-gray-900 mb-4">Selamat Datang di Dinas Perhubungan Kota Malang</h1>
