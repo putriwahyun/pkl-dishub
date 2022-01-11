@@ -25,8 +25,8 @@
     <div class="container">
 
         <!-- Head -->
-        <div class="head text-center">
-            <img src="asset/img/logo.png" width="250">
+        <div class="head text-center mt-5">
+            <img src="asset/img/logo.png" width="150">
             <h2 class="text-white"><b>Buku Tamu Dinas Perhubungan<br>Kota Malang</b></h2>
         </div>
         <!-- end Head -->

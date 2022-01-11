@@ -125,125 +125,194 @@
                     </ul>
 
                 </nav>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <!-- <h1 class="h3 mb-2 text-gray-800">Tambah Tamu</h1> -->
-
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary"></h6>
-                        </div>
-                        <div class="card-body">
-                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="..." class="d-block w-100" alt="...">
+                <div class="card">
+                    <div class="card-body" style="height:650px;">
+                        <div class="row">
+                            <!-- start carousel -->
+                            <div class="col-md-8 ml-4">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                     </div>
-                                    <div class="carousel-item">
-                                        <img src="..." class="d-block w-100" alt="...">
+                                    <div class="carousel-inner" style="border-radius:5px">
+                                        <div class="carousel-item active">
+                                            <img src="asset/img/hal5.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="asset/img/hal3.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="asset/img/hal4.png" class="d-block w-100" alt="...">
+                                        </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <img src="..." class="d-block w-100" alt="...">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- end carousel -->
+
+                            <!-- start tata cara -->
+                            <div class="col-md-3">
+                                <div class="card text-white bg-primary mb-3" style="width: 27rem;">
+                                    <div class="card-body">
+                                        <div class="h5 ml-3">
+                                            Tata Cara Membuat Janji Temu Dinas Perhungan Kota Malang
+                                        </div>
+                                        <div class="ml-4">
+                                            1. Setelah berhasil masuk, silahkan pilih Menu "Buat Janji Temu" pada bagian atas kanan halaman. <br>
+                                            2. Pilih bagian yang diinginkan. <br>
+                                            3. Cari Nama yang ingin ditemui. <br>
+                                            4. Isi form janji temu dengan benar. <br>
+                                            5. Kemudian silahkan tekan tombol "Buat Janji" yang ada pada layar. <br><br>
+                                        </div>
+                                        <div class="h5 ml-3">
+                                            Melihat Status/Riwayat Janji Temu
+                                        </div>
+                                        <div class="ml-4">
+                                            1. Jika sudah membuat janji temu, maka akan tersimpan pada menu "Janji Temu Saya" pada bagian atas kanan halaman. <br>
+                                            2. Di dalam menu tersebut terdapat riwayat dan status janji temu. <br>
+                                            3. Pada menu tersebut akan tampil status janji temu kepada pihak Dinas Perhubungan Kota Malang. <br><br>
+                                        </div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                            </div>
+                            <!-- end tata cara -->
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="row">
+                        <div class="col ml-5 mt-5 mb-5" style="width: 50%;">
+                            <div class="div mb-3" style="color: #D3D3D3">
+                                KONTAK INFO
+                            </div>
+                            <div>
+                                Dinas Perhubungan Kota Malang
+                                <table id="table-input">
+                                    <tr>
+                                        <td>Telepon </td>
+                                        <td>: (0341) 491140</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fax</td>
+                                        <td>: (0341) 411626</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td>: dishub@malangkota.go.id <br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Website</td>
+                                        <td>: https://dishub.malangkota.go.id</td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
-                        <!-- /.container-fluid -->
-
-                        <!-- cara membuat janji temu -->
-                        <div class="h3 ml-3">
-                            Tata Cara Membuat Janji Temu Dinas Perhungan Kota Malang
-                        </div>
-                        <div class="ml-4">
-                            1. Setelah berhasil masuk, silahkan pilih Menu "Buat Janji Temu" pada bagian atas kanan halaman. <br>
-                            2. Pilih bagian yang diinginkan. <br>
-                            3. Cari Nama yang ingin ditemui. <br>
-                            4. Isi form janji temu dengan benar. <br>
-                            5. Kemudian silahkan tekan tombol "Buat Janji" yang ada pada layar. <br><br>
-                        </div>
-                        <div class="h4 ml-3">
-                            Melihat Status/Riwayat Janji Temu
-                        </div>
-                        <div class="ml-4">
-                            1. Jika sudah membuat janji temu, maka akan tersimpan pada menu "Janji Temu Saya" pada bagian atas kanan halaman. <br>
-                            2. Di dalam menu tersebut terdapat riwayat dan status janji temu. <br>
-                            3. Pada menu tersebut akan tampil status janji temu kepada pihak Dinas Perhubungan Kota Malang. <br><br>
+                        <div class="col mt-5 mb-5" style="width: 50%;">
+                            <div class="div mb-3" style="color: #D3D3D3">
+                                SOSIAL MEDIA
+                            </div>
+                            <div class="div">
+                                <a href="https://www.instagram.com/dishubmalangkota/">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                                <a href="https://twitter.com/dishub_mlgkota">
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                </a>
+                                <a href="https://www.facebook.com/dishub.malang.37">
+                                    <i class="fab fa-facebook fa-2x"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <!-- End of Main Content -->
-                </div>
-                <!-- End of Content Wrapper -->
+                </footer>
 
-            </div>
-            <!-- End of Page Wrapper -->
+                <!-- Page Heading -->
+                <!-- <h1 class="h3 mb-2 text-gray-800">Tambah Tamu</h1> -->
 
-            <!-- Scroll to Top Button-->
-            <a class="scroll-to-top rounded" href="#page-top">
-                <i class="fas fa-angle-up"></i>
-            </a>
+                <!-- End of Page Wrapper -->
 
-            <!-- Logout Modal-->
-            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                            <a class="btn btn-primary" href="login.html">Logout</a>
+                <!-- Scroll to Top Button-->
+                <a class="scroll-to-top rounded" href="#page-top">
+                    <i class="fas fa-angle-up"></i>
+                </a>
+
+                <!-- Logout Modal-->
+                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                <a class="btn btn-primary" href="login.html">Logout</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <script type="text/javascript">
-                var sig = $('#sig').signature({
-                    syncField: '#signature64',
-                    syncFormat: 'PNG'
-                });
-                $('#clear').click(function(e) {
-                    e.preventDefault();
-                    sig.signature('clear');
-                    $("#signature64").val('');
-                });
-            </script>
+                <script type="text/javascript">
+                    var sig = $('#sig').signature({
+                        syncField: '#signature64',
+                        syncFormat: 'PNG'
+                    });
+                    $('#clear').click(function(e) {
+                        e.preventDefault();
+                        sig.signature('clear');
+                        $("#signature64").val('');
+                    });
+                </script>
 
-            <!-- Bootstrap core JavaScript-->
-            <script src="asset/vendor/jquery/jquery.min.js"></script>
-            <script src="asset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <!-- Bootstrap core JavaScript-->
+                <script src="asset/vendor/jquery/jquery.min.js"></script>
+                <script src="asset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <!-- Core plugin JavaScript-->
-            <script src="asset/vendor/jquery-easing/jquery.easing.min.js"></script>
+                <!-- Core plugin JavaScript-->
+                <script src="asset/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-            <!-- Custom scripts for all pages-->
-            <script src="asset/js/sb-admin-2.min.js"></script>
+                <!-- Custom scripts for all pages-->
+                <script src="asset/js/sb-admin-2.min.js"></script>
 
-            <!-- Page level plugins -->
-            <script src="asset/vendor/datatables/jquery.dataTables.min.js"></script>
-            <script src="asset/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+                <!-- Page level plugins -->
+                <script src="asset/vendor/datatables/jquery.dataTables.min.js"></script>
+                <script src="asset/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
-            <!-- Page level custom scripts -->
-            <script src="asset/js/demo/datatables-demo.js"></script>
+                <!-- Page level custom scripts -->
+                <script src="asset/js/demo/datatables-demo.js"></script>
 
 
 </body>
 
 </html>
+
+<style type="text/css">
+    footer {
+        font-family: 'Lucida Console';
+        font-size: 10pt;
+        background-color: #343A40;
+        color: white;
+        line-height: 30px;
+    }
+
+    i {
+        display: inline-block;
+        margin-right: 10px;
+    }
+</style>

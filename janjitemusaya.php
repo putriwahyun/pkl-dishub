@@ -155,23 +155,21 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>alay</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
-                                            <td>
+                                            <td>1</td>
+                                            <td>11 Januari 2021</td>
+                                            <td>Alya Faizah</td>
+                                            <td>Politeknik Negeri Malang</td>
+                                            <td>Selasa</td>
+                                            <td>08.00</td>
+                                            <td>Menemui...</td>
+                                            <td>Diterima</td>
+                                            <!-- <td>
                                                 <i class="fa fa-trash mr-3" aria-hidden="true"></i>
                                                 <i class="fas fa-edit"></i>
-                                            </td>
+                                            </td> -->
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="h6">
-                                    Keterangan: <br>
-                                </div>
                             </div>
                         </div>
                     </div>
