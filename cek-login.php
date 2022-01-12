@@ -16,7 +16,7 @@
             $_SESSION['sesi'] = $data_admin['nama_admin'];
 
             // echo "<script>alert('Anda berhasil Log In');</script>";
-            echo "<meta http-equiv='refresh' content='0; url=dashboard.php?user=$sesi'>";
+            echo "<meta http-equiv='refresh' content='0; url=index.php?user=$sesi'>";
         } else {
             echo "<meta http-equiv='refresh' content='0; url=login.php'>";
             echo "<script>alert('Anda Gagal Log In');</script>";

@@ -17,7 +17,6 @@
 
     <!-- Custom styles for this template-->
     <link href="asset/css/sb-admin-2.min.css" rel="stylesheet">
-
 </head>
 
 <body class="bg-gradient-primary">
@@ -26,7 +25,7 @@
 
         <!-- Head -->
         <div class="head text-center mt-5">
-            <img src="asset/img/logo.png" width="150">
+            <img src="asset/img/logo.png" width="130">
             <h2 class="text-white"><b>Buku Tamu Dinas Perhubungan<br>Kota Malang</b></h2>
         </div>
         <!-- end Head -->
@@ -46,8 +45,8 @@
                             <div class="form-group">
                                 <input type="password" class="form-control form-control-user" name="pass" placeholder="Password">
                             </div>
-                            <div >
-                                <button class="btn btn-primary btn-user btn-block" type="submit" name="submit" >Login</button>
+                            <div>
+                                <button class="btn btn-primary btn-user btn-block" type="submit" name="submit">Login</button>
                             </div>
                         </form>
                     </div>
