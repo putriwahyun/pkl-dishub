@@ -20,24 +20,26 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-primary" style="margin: 0; overflow: hidden">
 
     <div class="container">
 
         <!-- Head -->
         <div class="head text-center">
-            <img src="asset/img/logo.png" width="200">
-            <h2 class="text-white"><b>Janji Temu Dinas Perhubungan<br>Kota Malang</b></h2>
+            <img src="asset/img/logo.png" width="140">
+            <h3 class="text-white"><b>Janji Temu Dinas Perhubungan<br>Kota Malang</b></h3>
+            <br>
         </div>
         <!-- end Head -->
 
-        <div class="row mt-3">
-            <div class="col-lg-4 mb-3 ml-8"></div>
+        <div class="row mt-2">
+            <div class="col-lg-4 ml-8"></div>
             <div class="card shadow bg-gradient-light">
-                <div class="card-body" style="width:400px;height:400px;">
-                    <div class="p-5">
+                <div class="card-body" style="width:380px;height:350px;">
+                    <div class="p-3">
                         <div class="text-center">
-                            <h1 class="h4 text-gray-900 mb-4">Selamat Datang di Dinas Perhubungan Kota Malang</h1>
+                            <h1 class="h4 text-gray-900">Selamat Datang di Dinas Perhubungan Kota Malang</h1>
+                            <br>
                             <p>Silahkan Isi Nama Anda Sebelum Membuat Janji Temu</p>
                         </div>
                         <form class="user" method="post" action="">
@@ -45,7 +47,7 @@
                                 <input type="text" class="form-control form-control-user" name="user" placeholder="Nama Lengkap">
                             </div>
                             <div >
-                                <button class="btn btn-primary btn-user btn-block" type="submit" name="submit" >Mulai</button>
+                                <button class="btn btn-primary btn-user btn-block" type="submit" name="submit" >Masuk</button>
                             </div>
                         </form>
                     </div>

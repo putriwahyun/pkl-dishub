@@ -4,10 +4,11 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="HandheldFriendly" content="true">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -34,19 +35,6 @@
     <script type="text/javascript" src="asset/js/jquery.signature.min.js"></script>
     <script type="text/javascript" src="asset/js/jquery.ui.touch-punch.min.js"></script>
     <link rel="stylesheet" type="text/css" href="asset/css/jquery.signature.css">
-
-    <!-- Style Signature -->
-    <style>
-        .kbw-signature {
-            width: 385px;
-            height: 200px;
-        }
-
-        #sig canvas {
-            width: 100% !important;
-            height: auto;
-        }
-    </style>
 
 </head>
 
@@ -303,6 +291,16 @@
 </html>
 
 <style type="text/css">
+    .kbw-signature {
+        width: 385px;
+        height: 200px;
+    }
+
+    #sig canvas {
+        width: 100% !important;
+        height: auto;
+    }
+
     footer {
         font-family: 'Lucida Console';
         font-size: 10pt;
@@ -315,4 +313,16 @@
         display: inline-block;
         margin-right: 10px;
     }
+
+    @media screen and (max-width: 1060px) {
+        #primary {
+            width: 67%;
+        }
+
+        #secondary {
+            width: 30%;
+            margin-left: 3%;
+        }
+    }
 </style>
+<!-- Style Signature -->
