@@ -37,8 +37,8 @@
                                 <td>2011/04/25</td>
                                 <td>$320,800</td>
                                 <td>
-                                    <i class="fa fa-trash mr-3" aria-hidden="true"></i>
-                                    <i class="fas fa-edit"></i>
+                                    <a href="index.php?p=edit-tamu"><i class="fas fa-edit"></i></a>
+                                    <button type="button" class="btn"><a href="#" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')" class="tombol"><i class="fa fa-trash mr-3" aria-hidden="true"></i></a></button>
                                 </td>
                             </tr>
                         </tbody>
@@ -49,17 +49,6 @@
 
     </div>
     <!-- /.container-fluid -->
-
-
-    <!-- Footer -->
-    <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-                <span>Copyright &copy; Your Website 2020</span>
-            </div>
-        </div>
-    </footer>
-    <!-- End of Footer -->
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">

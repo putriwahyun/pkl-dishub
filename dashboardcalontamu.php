@@ -121,7 +121,7 @@
                     <div class="card-body" style="height:650px;">
                         <div class="row">
                             <!-- start carousel -->
-                            <div class="col-md-8 ml-4">
+                            <div class="col-md-8 ml-2">
                                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
                                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -153,12 +153,12 @@
 
                             <!-- start tata cara -->
                             <div class="col-md-3">
-                                <div class="card text-white bg-primary mb-3" style="width: 27rem;">
+                                <div class="card text-white bg-primary mb-3" style="width: 26rem;">
                                     <div class="card-body">
                                         <div class="h5 ml-3">
                                             Tata Cara Membuat Janji Temu Dinas Perhungan Kota Malang
                                         </div>
-                                        <div class="ml-4">
+                                        <div class="ml-4" style="text-align:justify">
                                             1. Setelah berhasil masuk, silahkan pilih Menu "Buat Janji Temu" pada bagian atas kanan halaman. <br>
                                             2. Pilih bagian yang diinginkan. <br>
                                             3. Cari Nama yang ingin ditemui. <br>
@@ -168,7 +168,7 @@
                                         <div class="h5 ml-3">
                                             Melihat Status/Riwayat Janji Temu
                                         </div>
-                                        <div class="ml-4">
+                                        <div class="ml-4" style="text-align:justify">
                                             1. Jika sudah membuat janji temu, maka akan tersimpan pada menu "Janji Temu Saya" pada bagian atas kanan halaman. <br>
                                             2. Di dalam menu tersebut terdapat riwayat dan status janji temu. <br>
                                             3. Pada menu tersebut akan tampil status janji temu kepada pihak Dinas Perhubungan Kota Malang. <br><br>
