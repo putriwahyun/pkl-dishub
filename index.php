@@ -100,6 +100,14 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
                     </a>
                 </li>
 
+                <!-- Nav Item - Utilities Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php?p=kelolapegawai">
+                        <i class="fa fa-history" aria-hidden="true"></i>
+                        <span class="links_name">Kelola Pegawai</span>
+                    </a>
+                </li>
+
                 <!-- Divider -->
                 <hr class="sidebar-divider">
 

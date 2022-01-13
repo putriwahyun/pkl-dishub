@@ -38,8 +38,6 @@
                 <div class="card-body" style="width:380px;height:350px;">
                     <div class="p-3">
                         <div class="text-center">
-                            <h1 class="h4 text-gray-900">Selamat Datang di Dinas Perhubungan Kota Malang</h1>
-                            <br>
                             <p>Silahkan Isi Nama Anda Sebelum Membuat Janji Temu</p>
                         </div>
                         <form class="user" method="post" action="">
