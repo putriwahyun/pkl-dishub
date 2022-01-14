@@ -21,23 +21,36 @@
                                 <th>Nama</th>
                                 <th>Instansi</th>
                                 <th>Keperluan</th>
-                                <th>Tanda Tangan</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-                                <td>$320,800</td>
-                                <td>
-                                    <a href="index.php?p=edit-tamu"><i class="fas fa-edit"></i></a>
-                                    <button type="button" class="btn"><a href="#" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')" class="tombol"><i class="fa fa-trash mr-3" aria-hidden="true"></i></a></button>
-                                </td>
-                            </tr>
+                            <?php
+                            $nomor = 1;
+                            $query = "SELECT * FROM tamu";
+                            $q_tampil_tamu = mysqli_query($db, $query);
+
+                            if (mysqli_num_rows($q_tampil_tamu) > 0) {
+                                while ($r_tampil_tamu = mysqli_fetch_array($q_tampil_tamu)) {
+                            ?>
+                                    <tr>
+                                        <td><?php echo $nomor; ?></td>
+                                        <td><?php echo $r_tampil_tamu['tanggal']; ?></td>
+                                        <td><?php echo $r_tampil_tamu['nama_tamu']; ?></td>
+                                        <td><?php echo $r_tampil_tamu['instansi']; ?></td>
+                                        <td><?php echo $r_tampil_tamu['keperluan']; ?></td>
+                                        <td>
+                                            <a href="index.php?p=edit-tamu=<?php echo $r_tampil_tamu['id_tamu']; ?>"><i class="fas fa-edit"></i></a>
+                                            <button type="button" class="btn"><a href="proses/tamu-hapus.php?id_tamu=<?php echo $r_tampil_tamu['id_tamu']; ?>" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')" class="tombol"><i class="fa fa-trash mr-3" aria-hidden="true"></i></a></button>
+                                        </td>
+                                    </tr>
+                            <?php
+                                    $nomor++;
+                                }
+                            } else {
+                                echo "";
+                            }
+                            ?>
                         </tbody>
                     </table>
                 </div>
@@ -52,4 +65,9 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
+    <script>
+        $(document).ready(function() {
+            $('#dataTable').DataTable();
+        });
+    </script>
 </body>

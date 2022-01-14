@@ -38,18 +38,18 @@
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <form class="row g-3">
+                        <form class="row g-3" action="proses/tambah-tamu-proses.php" method="POST">
                             <div class="col-md-4 mb-3">
                                 <label for="inputEmail4" class="form-label">Nama</label>
-                                <input type="email" class="form-control" id="inputEmail4">
+                                <input type="text" name="nama_tamu" class="form-control">
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="inputEmail4" class="form-label">Instansi</label>
-                                <input type="email" class="form-control" id="inputEmail4">
+                                <input type="text" name="instansi" class="form-control">
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Keperluan</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea class="form-control" name="keperluan" rows="3"></textarea>
                             </div>
                             <div class="col-md-12 mb-4">
                                 <label class="" for="">Tanda Tangan:</label>
@@ -58,8 +58,8 @@
                                 <br />
                                 <br>
                                 <button class="btn btn-danger" id="clear">Hapus Tanda Tangan</button>
-                                <textarea id="signature64" name="signed" style="display: none"></textarea>
-                                <button type="submit" class="btn btn-primary">Simpan</button>
+                                <textarea id="signature64" name="tandatangan" style="display: none"></textarea>
+                                <button type="submit" name="Submit" class="btn btn-primary">Simpan</button>
                             </div>
                         </form>
                     </table>
