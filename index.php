@@ -102,7 +102,7 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
 
                 <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?p=kelolapegawai">
+                    <a class="nav-link" href="index.php?p=kelola-pegawai">
                         <i class="fa fa-history" aria-hidden="true"></i>
                         <span class="links_name">Kelola Pegawai</span>
                     </a>

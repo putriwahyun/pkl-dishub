@@ -1,3 +1,10 @@
+<?php 
+    $tanggal = date('d-m-Y');
+    $tamu = mysqli_query($db, "SELECT id_tamu FROM tamu");
+    $jumlah_tamu = mysqli_num_rows($tamu);
+    $tamu_hari_ini = mysqli_query($db, "SELECT id_tamu FROM tamu WHERE tanggal='$tanggal'");
+    $jumlah_tamu_hari_ini = mysqli_num_rows($tamu_hari_ini);
+?>
 <head>
     <title>Buku Tamu Dinas Perhubungan</title>
 </head>
@@ -22,7 +29,7 @@
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                     Tamu Hari Ini</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">xx</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $jumlah_tamu_hari_ini;?></div>
                             </div>
                             <div class="col-auto">
                                 <i class="fa fa-address-book fa-2x text-gray-300" aria-hidden="true"></i>
@@ -40,7 +47,7 @@
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                     Keseluruhan Tamu</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">xx</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $jumlah_tamu;?></div>
                             </div>
                             <div class="col-auto">
                                 <i class="fa fa-users fa-2x text-gray-300" aria-hidden="true"></i>
