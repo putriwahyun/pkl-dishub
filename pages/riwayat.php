@@ -40,8 +40,8 @@
                                         <td><?php echo $r_tampil_tamu['instansi']; ?></td>
                                         <td><?php echo $r_tampil_tamu['keperluan']; ?></td>
                                         <td>
-                                            <a href="index.php?p=edit-tamu=<?php echo $r_tampil_tamu['id_tamu']; ?>"><i class="fas fa-edit"></i></a>
-                                            <button type="button" class="btn"><a href="proses/tamu-hapus.php?id_tamu=<?php echo $r_tampil_tamu['id_tamu']; ?>" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')" class="tombol"><i class="fa fa-trash mr-3" aria-hidden="true"></i></a></button>
+                                            <a href="index.php?p=edit-tamu&id_tamu=<?php echo $r_tampil_tamu['id_tamu']; ?>"><i class="fas fa-edit"></i></a>
+                                            <button type="button" class="btn"><a href="proses/hapus-tamu-proses.php?id_tamu=<?php echo $r_tampil_tamu['id_tamu']; ?>" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')" class="tombol"><i class="fa fa-trash mr-3" aria-hidden="true"></i></a></button>
                                         </td>
                                     </tr>
                             <?php
