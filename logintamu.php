@@ -41,13 +41,19 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
                     <p class="text-white-75 mb-4">Silahkan Isi Nama Anda Sebelum Membuat Janji Temu</p>
-                    <div class="form-floating mb-3">
-                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                        <label for="name">Nama Lengkap</label>
-                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                    </div>
+                    <form action="cek-login-tamu.php" method="post">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="nama_calon_tamu" id="name" type="text" placeholder="Enter your name..." />
+                            <label for="name">Nama Lengkap</label>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary btn-user btn-block" type="submit" name="submit">Mulai</button>
+                        </div>
+                    </form>
+
                     <br>
-                    <a class="btn btn-light btn-xl" style="color:#548CFF" href="tamu.php">Mulai</a>
+                    <!-- <a class="btn btn-light btn-xl" style="color:#548CFF" href="tamu.php">Mulai</a> -->
+
                 </div>
             </div>
         </div>
