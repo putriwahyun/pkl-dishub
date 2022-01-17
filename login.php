@@ -24,16 +24,16 @@
     <div class="container">
 
         <!-- Head -->
-        <div class="head text-center mt-5">
+        <div class="head text-center mt-3">
             <img src="asset/img/logo.png" width="130">
-            <h2 class="text-white"><b>Buku Tamu Dinas Perhubungan<br>Kota Malang</b></h2>
+            <h3 class="text-white"><b>Buku Tamu Dinas Perhubungan<br>Kota Malang</b></h3>
         </div>
         <!-- end Head -->
 
-        <div class="row mt-4">
-            <div class="col-lg-4 mb-3 ml-8"></div>
+        <div class="row mt-3" style="margin-left: 5%;">
+            <div class="col-lg-4 ml-8"></div>
             <div class="card shadow bg-gradient-light">
-                <div class="card-body" style="width:400px;">
+                <div class="card-body" style="width:100%">
                     <div class="p-5">
                         <div class="text-center">
                             <h1 class="h4 text-gray-900 mb-4">Login</h1>

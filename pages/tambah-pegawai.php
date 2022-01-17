@@ -35,7 +35,6 @@
                                     <option class="dropdown-item" value="Lalu Lintas">Lalu Lintas</option>
                                     <option class="dropdown-item" value="Angkutan">Angkutan</option>
                                     <option class="dropdown-item" value="Manajemen Perparkiran">Manajemen Perparkiran</option>
-                                    <option class="dropdown-item" value="UPT. Pengelolaan Prasarana Perhubungan">UPT. Pengelolaan Prasarana Perhubungan</option>
                                 </select>
                             </div>
                         </div>
