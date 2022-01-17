@@ -30,13 +30,13 @@
                     <br>
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <a class="btn btn-xl" style="background-color: #548CFF; color:white;" href="#about">Find Out More</a>
+                    <a class="btn btn-xl" style="background-color:#003399; color:white;" href="#about">Selengkapnya</a>
                 </div>
             </div>
         </div>
     </header>
     <!-- About-->
-    <section class="page-section" style="background-color: #548CFF;" id="about">
+    <section class="page-section" style="background-color:#003399;" id="about">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
@@ -47,7 +47,7 @@
                             <label for="name">Nama Lengkap</label>
                         </div>
                         <div>
-                            <button class="btn btn-primary btn-user btn-block" type="submit" name="submit">Mulai</button>
+                            <button class="btn btn-user btn-block btn-lg" type="submit" name="submit" style="background-color:#FFCC00">Mulai</button>
                         </div>
                     </form>
 
