@@ -30,7 +30,7 @@
                         <div class="col-sm-10">
                             <div class="dropdown">
                                 <select class="form-select form-select-lg mb-3" name="bidang" style="width:60%;height:38px" type="button" data-bs-toggle="dropdown" aria-label=".form-select-lg example">
-                                    <option selected>Pilih Bidang</option>
+                                    <option selected disabled hidden>Pilih Bidang</option>
                                     <option class="dropdown-item" value="Sekretariat">Sekretariat</option>
                                     <option class="dropdown-item" value="Lalu Lintas">Lalu Lintas</option>
                                     <option class="dropdown-item" value="Angkutan">Angkutan</option>
