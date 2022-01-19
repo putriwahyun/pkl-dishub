@@ -103,8 +103,16 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
                 <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?p=kelola-pegawai">
-                        <i class="fa fa-history" aria-hidden="true"></i>
+                        <i class="fas fa-users"></i>
                         <span class="links_name">Kelola Pegawai</span>
+                    </a>
+                </li>
+
+                <!-- Nav Item - Utilities Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php?p=konfirmasijanjitemu">
+                        <i class="fas fa-user-clock"></i>
+                        <span class="links_name">Janji Temu</span>
                     </a>
                 </li>
 
