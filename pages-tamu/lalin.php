@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include 'proses/list-pegawai-lalin.php';
+?>
 
 <head>
     <meta charset="utf-8">
@@ -22,36 +23,6 @@
 </head>
 
 <body>
-    <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <!-- Head -->
-            <img src="asset/img/logo.png" width="50" style="margin:10px">
-            <h5 class="text-white">Dinas Perhubungan Kota Malang</h5>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#">Buat Janji Temu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Janji Temu Saya</a></li>
-                    <!-- Nav Item - User Information -->
-                    <li class="nav-item dropdown no-arrow">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
-                            <img class="img-profile rounded-circle" style="width:30px;" src="asset/img/undraw_profile.svg">
-                        </a>
-                        <!-- Dropdown - User Information -->
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Logout
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <!-- Page content-->
     <div class="container mb-5 mt-5 col-sm-6">
         <div class="card">
@@ -59,10 +30,9 @@
                 <div class="row">
                     <div>
                         <select class="form-select mb-3" aria-label="Default select example">
-                            <option selected disabled hidden>Pilih Nama</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <?php foreach ($data_lalin as $lalin) : ?>
+                                <option value="<?= $lalin['nama_pegawai']?>"> <?php echo $lalin['nama_pegawai']; ?></option>
+                            <?php endforeach ?>
                         </select>
                     </div>
                     <div class="mb-3">
@@ -114,8 +84,6 @@
     <script src="asset/js/demo/datatables-demo.js"></script>
 
 </body>
-
-</html>
 
 <style type="text/css">
 

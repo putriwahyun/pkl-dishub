@@ -15,14 +15,14 @@
             $_SESSION['sesi'] = $data_calon_tamu['nama_calon_tamu'];
 
             // echo "<script>alert('Anda berhasil Log In');</script>";
-            echo "<meta http-equiv='refresh' content='0; url=tamu.php'>";
+            echo "<meta http-equiv='refresh' content='0; url=header-tamu.php?user=$sesi'>";
         } else {
             extract($_POST);
 
             $sql = "INSERT INTO calontamu VALUES('$id_calon_tamu', '$user')";
             $query = mysqli_query($db, $sql);
 
-            header("location:tamu.php");
+            header("location:header-tamu.php?user=$sesi'");
         }
     } else {
         include "logintamu.php";

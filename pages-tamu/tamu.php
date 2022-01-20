@@ -1,10 +1,3 @@
-<?php
-session_start();
-
-include 'koneksi.php';
-
-if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
-?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -29,36 +22,6 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
     </head>
 
     <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <!-- Head -->
-                <img src="asset/img/logo.png" width="50" style="margin:10px">
-                <h5 class="text-white">Dinas Perhubungan Kota Malang</h5>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="buatjanji.php">Buat Janji Temu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="janjitemusaya.php">Janji Temu Saya</a></li>
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['sesi'] ?></span>
-                                <img class="img-profile rounded-circle" style="width:30px;" src="asset/img/undraw_profile.svg">
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="logout-tamu.php" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
         <!-- Page header with logo and tagline-->
         <header class="py-3 bg-light border-bottom mb-4">
             <div class="container">
@@ -222,10 +185,3 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
             margin-right: 10px;
         }
     </style>
-
-<?php
-} else {
-    echo "<script>alert('Anda Harus Login Dahulu!');</script>";
-    header('location:logintamu.php');
-}
-?>

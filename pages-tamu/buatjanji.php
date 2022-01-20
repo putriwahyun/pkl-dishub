@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -8,7 +5,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="HandheldFriendly" content="true">
-    <title>Dashboard Janji Temu</title>
+    <title>Buat Janji</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="asset/assets/favicon.ico" />
 
@@ -26,36 +23,6 @@
 </head>
 
 <body>
-    <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <!-- Head -->
-            <img src="asset/img/logo.png" width="50" style="margin:10px">
-            <h5 class="text-white">Dinas Perhubungan Kota Malang</h5>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#">Buat Janji Temu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Janji Temu Saya</a></li>
-                    <!-- Nav Item - User Information -->
-                    <li class="nav-item dropdown no-arrow">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
-                            <img class="img-profile rounded-circle" style="width:30px;" src="asset/img/undraw_profile.svg">
-                        </a>
-                        <!-- Dropdown - User Information -->
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Logout
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <!-- Page content-->
     <div class="container mb-5">
         <div class="row" style="margin-left: 15%;">
@@ -71,7 +38,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <a href="sekretariat.php" class="hex-content">
+                    <a href="header-tamu.php?pt=sekretariat" class="hex-content">
                         <span class="hex-content-inner">
                             <span class="icon">
                                 <i class="fas fa-envelope-open-text"></i>
@@ -94,7 +61,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <a href="lalin.php" class="hex-content">
+                    <a href="header-tamu.php?pt=lalin" class="hex-content">
                         <span class="hex-content-inner">
                             <span class="icon">
                                 <i class="fas fa-traffic-light"></i>
@@ -117,7 +84,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <a href="parkir.php" class="hex-content">
+                    <a href="header-tamu.php?pt=parkir" class="hex-content">
                         <span class="hex-content-inner">
                             <span class="icon">
                                 <i class="fas fa-parking"></i>
@@ -140,7 +107,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <a href="angkutan.php" class="hex-content">
+                    <a href="header-tamu.php?pt=angkutan" class="hex-content">
                         <span class="hex-content-inner">
                             <span class="icon">
                                 <i class="fas fa-bus"></i>
@@ -186,8 +153,6 @@
     <script src="asset/js/form.min.js"></script>
     <script src="asset/js/main.js"></script>
 </body>
-
-</html>
 
 <style type="text/css">
     .hexagon-menu {
