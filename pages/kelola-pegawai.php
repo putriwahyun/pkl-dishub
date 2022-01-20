@@ -64,4 +64,9 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
+    <script>
+        $(document).ready(function() {
+            $('#dataTable').DataTable();
+        });
+    </script>
 </body>

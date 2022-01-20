@@ -69,12 +69,8 @@ $r_tampil_tamu = mysqli_fetch_array($q_tampil_tamu);
                                 <label class="" for="">Tanda Tangan:</label>
                                 <br />
                                 <img src="<?php echo $r_tampil_tamu['tandatangan']; ?>" style="padding-bottom: 150px;">
-                                <div id="sig"></div>
                                 <br />
                                 <br>
-                                <button class="btn btn-danger" id="clear">Hapus Tanda Tangan</button>
-                                
-                                <textarea id="signature64" name="tandatangan" style="display: none"></textarea>
                                 <button type="submit" name="Submit" class="btn btn-primary">Simpan</button>
                             </div>
                         </form>

@@ -26,36 +26,41 @@ include 'proses/list-pegawai-parkir.php';
     <div class="container mb-5 mt-5 col-sm-6">
         <div class="card">
             <div class="card-body">
-                <div class="row">
-                    <div>
-                        <select class="form-select mb-3" aria-label="Default select example">
-                            <?php foreach ($data_parkir as $parkir) : ?>
-                                <option value="<?= $parkir['nama_pegawai']?>"> <?php echo $parkir['nama_pegawai']; ?></option>
-                            <?php endforeach ?>
-                        </select>
+                <form action="proses/tambah-janjitemu-proses.php" method="post">
+                    <div class="row">
+                        <div>
+                            <select class="form-select mb-3" aria-label="Default select example" name="nama_pegawai_dituju">
+                                <?php foreach ($data_parkir as $parkir) : ?>
+                                    <option value="<?= $parkir['nama_pegawai'] ?>"> <?php echo $parkir['nama_pegawai']; ?></option>
+                                <?php endforeach ?>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Nama Tamu</label>
+                            <input type="text" name="nama_tamu" value="<?= $_SESSION['sesi'] ?>" class="form-control" id="formGroupExampleInput2" placeholder="" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Asal Instansi</label>
+                            <input type="text" name="instansi" class="form-control" id="formGroupExampleInput2" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Pilih Tanggal</label>
+                            <input type="date" name="tanggal_janji" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Waktu Temu</label>
+                            <input type="time" name="waktu_temu" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Nomor Telepon</label>
+                            <input type="text" name="no_telp" class="form-control" id="formGroupExampleInput2" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Keperluan</label>
+                            <textarea class="form-control" name="keperluan" rows="3"></textarea>
+                        </div>
+                        <button type="submit" name="Submit" class="btn" style="background-color:#003399;color:white;">Simpan</button>
                     </div>
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput2" class="form-label">Asal Instansi</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-                    </div>
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label">Pilih Tanggal</label>
-                        <input type="date" name="" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-                    </div>
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput2" class="form-label">Waktu Temu</label>
-                        <input type="time" name="" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-                    </div>
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput2" class="form-label">Nomor Telepon</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-                    </div>
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput2" class="form-label">Keperluan</label>
-                        <textarea class="form-control" name="" rows="3"></textarea>
-                    </div>
-                    <button type="submit" name="Submit" class="btn" style="background-color:#003399;color:white;">Simpan</button>
-                </div>
             </div>
         </div>
 

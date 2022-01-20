@@ -30,13 +30,13 @@
                     <br>
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <a class="btn btn-xl" style="background-color:#003399; color:white;" href="#about">Selengkapnya</a>
+                    <a class="btn btn-xl" style="background-color:#003399; color:white;" href="#login">Selengkapnya</a>
                 </div>
             </div>
         </div>
     </header>
     <!-- About-->
-    <section class="page-section" style="background-color:#003399;" id="about">
+    <section class="page-section" style="background-color:#003399;" id="login">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">

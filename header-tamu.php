@@ -40,7 +40,7 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="header-tamu.php?pt=buatjanji">Buat Janji Temu</a></li>
                         <li class="nav-item"><a class="nav-link" href="header-tamu.php?pt=janjitemusaya">Janji Temu Saya</a></li>
-                        <li class="nav-item"><a class="nav-link" href="logout-tamu.php" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                        <li class="nav-item"><a class="nav-link" href="logout-tamu.php"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
@@ -113,12 +113,8 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
         <!-- Custom scripts for all pages-->
         <script src="asset/js/sb-admin-2.min.js"></script>
 
-        <!-- Page level plugins -->
-        <script src="asset/vendor/datatables/jquery.dataTables.min.js"></script>
-        <script src="asset/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+        
 
-        <!-- Page level custom scripts -->
-        <script src="asset/js/demo/datatables-demo.js"></script>
     </body>
 
     </html>

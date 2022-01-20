@@ -43,16 +43,32 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>bapak...</td>
-                                    <td>Politeknik Negeri Malang</td>
-                                    <td>11 Januari 2021</td>
-                                    <td>08.00</td>
-                                    <td>0866666666</td>
-                                    <td>Menemui...</td>
-                                    <td>Diterima</td>
-                                </tr>
+                                <?php
+                                $nomor = 1;
+                                $nama_tamu = $_SESSION['sesi'];
+                                $query = "SELECT * FROM janjitemu WHERE nama_tamu LIKE '%$nama_tamu%'";
+                                $q_tampil_janji_temu = mysqli_query($db, $query);
+
+                                if (mysqli_num_rows($q_tampil_janji_temu) > 0) {
+                                    while ($r_tampil_janji_temu = mysqli_fetch_array($q_tampil_janji_temu)) {
+                                ?>
+                                        <tr>
+                                            <td><?php echo $nomor; ?></td>
+                                            <td><?php echo $r_tampil_janji_temu['nama_pegawai_dituju']; ?></td>
+                                            <td><?php echo $r_tampil_janji_temu['instansi']; ?></td>
+                                            <td><?php echo $r_tampil_janji_temu['tanggal_janji']; ?></td>
+                                            <td><?php echo $r_tampil_janji_temu['waktu_temu']; ?></td>
+                                            <td><?php echo $r_tampil_janji_temu['no_telp']; ?></td>
+                                            <td><?php echo $r_tampil_janji_temu['keperluan']; ?></td>
+                                            <td><?php echo $r_tampil_janji_temu['keterangan']; ?></td>
+                                        </tr>
+                                <?php
+                                        $nomor++;
+                                    }
+                                } else {
+                                    echo "";
+                                }
+                                ?>
                             </tbody>
                         </table>
                     </div>
