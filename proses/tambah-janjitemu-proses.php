@@ -13,6 +13,8 @@ $keterangan = 'Menunggu';
 if (isset($_POST['Submit'])) {
     extract($_POST);
 
+    
+
     $sql = "INSERT INTO janjitemu VALUES('$id_janji_temu', '$nama_pegawai_dituju', '$nama_tamu', 
             '$instansi', '$tanggal_janji', '$waktu_temu', '$no_telp', '$keperluan', '$keterangan')";
     $query = mysqli_query($db, $sql);

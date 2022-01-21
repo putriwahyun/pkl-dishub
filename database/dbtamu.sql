@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 18 Jan 2022 pada 08.05
--- Versi server: 10.4.14-MariaDB
--- Versi PHP: 7.3.21
+-- Generation Time: Jan 21, 2022 at 05:23 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE `admin` (
@@ -35,7 +35,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`id_admin`, `nama_admin`, `username`, `password`) VALUES
@@ -44,7 +44,7 @@ INSERT INTO `admin` (`id_admin`, `nama_admin`, `username`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `calontamu`
+-- Table structure for table `calontamu`
 --
 
 CREATE TABLE `calontamu` (
@@ -53,7 +53,7 @@ CREATE TABLE `calontamu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `calontamu`
+-- Dumping data for table `calontamu`
 --
 
 INSERT INTO `calontamu` (`id_calon_tamu`, `nama_calon_tamu`) VALUES
@@ -66,12 +66,64 @@ INSERT INTO `calontamu` (`id_calon_tamu`, `nama_calon_tamu`) VALUES
 (7, 'morgan'),
 (8, 'alya'),
 (9, 'faizah'),
-(10, '');
+(10, ''),
+(11, 'putri wahyu'),
+(12, 'alya faizah'),
+(13, 'heola'),
+(14, 'hallo coba'),
+(15, 'heola annyeong'),
+(16, 'zeala'),
+(17, 'eka widya'),
+(18, 'ana maria'),
+(19, 'nicken octavia'),
+(20, 'nama'),
+(21, 'lea gloria'),
+(22, 'arghan'),
+(23, 'coba lagi'),
+(24, 'xavier'),
+(25, 'ellak');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pegawai`
+-- Table structure for table `janjitemu`
+--
+
+CREATE TABLE `janjitemu` (
+  `id_janji_temu` int(10) NOT NULL,
+  `nama_pegawai_dituju` varchar(50) NOT NULL,
+  `nama_tamu` varchar(50) NOT NULL,
+  `instansi` varchar(50) NOT NULL,
+  `tanggal_janji` varchar(20) NOT NULL,
+  `waktu_temu` varchar(20) NOT NULL,
+  `no_telp` varchar(20) NOT NULL,
+  `keperluan` varchar(200) NOT NULL,
+  `keterangan` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `janjitemu`
+--
+
+INSERT INTO `janjitemu` (`id_janji_temu`, `nama_pegawai_dituju`, `nama_tamu`, `instansi`, `tanggal_janji`, `waktu_temu`, `no_telp`, `keperluan`, `keterangan`) VALUES
+(1, 'WIDAYATI, SE', '', 'diskominfo', '2022-01-22', '17:35', '09876543213', 'diskusi harian', 'Diterima'),
+(2, 'JOSE MANUEL DA P.BELO.SE', '', 'diskominfo', '2022-01-06', '18:44', '08123098736', 'nm.m', 'Diterima'),
+(3, 'SONI BACHTIAR, SE.MM', '', 'diskominfo', '2022-01-26', '19:35', '09876543213', 'bmbbmmb', 'Menunggu'),
+(4, 'SONI BACHTIAR, SE.MM', 'putri wahyu', 'diskominfo', '2022-01-22', '18:34', '09876543213', 'bnnnnb', 'Ditolak'),
+(5, '', 'putri wahyu', 'bappeda', '2022-01-28', '17:51', '08123098736', 'vnvnvn', 'Menunggu'),
+(6, '', 'putri wahyu', 'diskominfo', '2022-01-27', '18:55', '09876543213', 'bvnvn', 'Menunggu'),
+(7, '', 'putri wahyu', 'nmbnm', '2022-01-25', '18:55', '09876543213', 'nbmbm', 'Menunggu'),
+(8, '', 'putri wahyu', 'mn,', '2022-01-20', '19:57', '09876543213', 'bmnbnmn', 'Menunggu'),
+(9, 'Ir. NGOEDIJONO, MS.Tr', 'putri wahyu', 'diskominfo', '2022-01-25', '17:02', '08123098736', 'nbm', 'Menunggu'),
+(10, 'Ir. NGOEDIJONO, MS.Tr', '', 'diskominfo', '2022-01-21', '18:08', '081309876543', 'nmxnz', 'Menunggu'),
+(11, 'Ir. NGOEDIJONO, MS.Tr', 'putri wahyu', 'diskominfo', '2022-01-27', '19:13', '09876543213', 'nmn', 'Diterima'),
+(12, 'SLAMET RIADI', 'putri wahyu', 'bappeda', '2022-01-28', '19:26', '081309876543', 'nnbmnm', 'Ditolak'),
+(13, 'Zafa Andini', 'ellak', 'diskominfo', '2022-01-22', '14:29', '09876543213', 'ajklhslakhs', 'Ditolak');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pegawai`
 --
 
 CREATE TABLE `pegawai` (
@@ -81,7 +133,7 @@ CREATE TABLE `pegawai` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `pegawai`
+-- Dumping data for table `pegawai`
 --
 
 INSERT INTO `pegawai` (`id_pegawai`, `nama_pegawai`, `bidang`) VALUES
@@ -205,12 +257,13 @@ INSERT INTO `pegawai` (`id_pegawai`, `nama_pegawai`, `bidang`) VALUES
 (128, 'I KETUT WAHYU KURNIAWAN, S.S.T (TD)', 'Angkutan'),
 (129, 'DENNY KURNIAWAN ', 'Angkutan'),
 (130, 'FITRIA NUR AENI', 'Angkutan'),
-(131, 'M. YOLANDA ADIN NATA', 'Angkutan');
+(131, 'M. YOLANDA ADIN NATA', 'Angkutan'),
+(133, 'Zafa Andini', 'Angkutan');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tamu`
+-- Table structure for table `tamu`
 --
 
 CREATE TABLE `tamu` (
@@ -223,7 +276,7 @@ CREATE TABLE `tamu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tamu`
+-- Dumping data for table `tamu`
 --
 
 INSERT INTO `tamu` (`id_tamu`, `tanggal`, `nama_tamu`, `instansi`, `keperluan`, `tandatangan`) VALUES
@@ -234,63 +287,76 @@ INSERT INTO `tamu` (`id_tamu`, `tanggal`, `nama_tamu`, `instansi`, `keperluan`, 
 (5, '0000-00-00', 'meghan', 'diskominfo', 'ajhs', '../asset/tandatangan/meghan.png'),
 (6, '14-01-2022', 'meghan', 'diskominfo', 'ddd', '../asset/tandatangan/meghan.png'),
 (7, '15-01-2022', 'zella', 'bappeda', 'kunjungan', 'tandatangan zella.png'),
-(9, '15-01-2022', 'wilona nata', 'diskominfo2', 'pertemuan 2', '../asset/tandatangan/wilona nata.png');
+(9, '15-01-2022', 'wilona nata', 'diskominfo2', 'pertemuan 2', '../asset/tandatangan/wilona nata.png'),
+(10, '20-01-2022', 'nicken octaviana', 'poltek', 'pkl', '../asset/tandatangan/nicken.png');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `admin`
+-- Indexes for table `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id_admin`);
 
 --
--- Indeks untuk tabel `calontamu`
+-- Indexes for table `calontamu`
 --
 ALTER TABLE `calontamu`
   ADD PRIMARY KEY (`id_calon_tamu`);
 
 --
--- Indeks untuk tabel `pegawai`
+-- Indexes for table `janjitemu`
+--
+ALTER TABLE `janjitemu`
+  ADD PRIMARY KEY (`id_janji_temu`);
+
+--
+-- Indexes for table `pegawai`
 --
 ALTER TABLE `pegawai`
   ADD PRIMARY KEY (`id_pegawai`);
 
 --
--- Indeks untuk tabel `tamu`
+-- Indexes for table `tamu`
 --
 ALTER TABLE `tamu`
   ADD PRIMARY KEY (`id_tamu`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `admin`
+-- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
   MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `calontamu`
+-- AUTO_INCREMENT for table `calontamu`
 --
 ALTER TABLE `calontamu`
-  MODIFY `id_calon_tamu` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_calon_tamu` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- AUTO_INCREMENT untuk tabel `pegawai`
+-- AUTO_INCREMENT for table `janjitemu`
+--
+ALTER TABLE `janjitemu`
+  MODIFY `id_janji_temu` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `pegawai`
 --
 ALTER TABLE `pegawai`
-  MODIFY `id_pegawai` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
+  MODIFY `id_pegawai` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=134;
 
 --
--- AUTO_INCREMENT untuk tabel `tamu`
+-- AUTO_INCREMENT for table `tamu`
 --
 ALTER TABLE `tamu`
-  MODIFY `id_tamu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_tamu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -29,7 +29,7 @@
                         <label for="" class="col-sm-2 col-form-label">Bidang</label>
                         <div class="col-sm-10">
                             <div class="dropdown">
-                                <select class="form-select form-select-lg mb-3" name="bidang" style="width:60%;height:38px" type="button" data-bs-toggle="dropdown" aria-label=".form-select-lg example">
+                                <select class="form-select form-select-lg mb-3" name="bidang" style="width:60%;height:50px" type="button" data-bs-toggle="dropdown" aria-label=".form-select-lg example">
                                     <option selected disabled hidden>Pilih Bidang</option>
                                     <option class="dropdown-item" value="Sekretariat">Sekretariat</option>
                                     <option class="dropdown-item" value="Lalu Lintas">Lalu Lintas</option>

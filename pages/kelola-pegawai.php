@@ -16,7 +16,7 @@
                     Tambah Pegawai
                 </a>
                 <div class="table-responsive">
-                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <table class="table table-bordered" id="example" width="100%" cellspacing="0">
                         <thead style="text-align: center;">
                             <tr>
                                 <th>No</th>
@@ -66,7 +66,6 @@
 
     <script>
         $(document).ready(function() {
-            $('#dataTable').DataTable();
         });
     </script>
 </body>

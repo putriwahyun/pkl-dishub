@@ -25,6 +25,12 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
         <!-- Custom styles for this template-->
         <link href="asset/css/sb-admin-2.min.css" rel="stylesheet">
 
+        <!-- datatables -->
+        <!-- <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"> -->
+        <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+
+
         <style>
             li a .links_name {
                 color: white;
@@ -225,6 +231,14 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
                     <script src="asset/js/demo/chart-area-demo.js"></script>
                     <script src="asset/js/demo/chart-pie-demo.js"></script>
 
+                    <script src="js/script.js"></script>
+                    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+                    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+                    <script>
+                        $(document).ready(function() {
+                            $('#example').DataTable();
+                        });
+                    </script>
     </body>
 
     </html>
