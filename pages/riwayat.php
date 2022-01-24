@@ -12,6 +12,9 @@
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
             <div class="card-body">
+                <!-- cetak pdf -->
+                <button type="button" class="btn btn-outline-success mb-3" style="float: right;">Cetak PDF</button>
+
                 <div class="table-responsive">
                     <table class="table table-bordered" id="example" width="100%" cellspacing="0">
                         <thead style="text-align: center;">
