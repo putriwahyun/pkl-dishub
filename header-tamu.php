@@ -26,6 +26,11 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
         <link href="asset/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adding Dropdowns in Bootstrap via Data Attributes</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
 
     <body>
@@ -40,11 +45,10 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="header-tamu.php?pt=buatjanji">Buat Janji Temu</a></li>
                         <li class="nav-item"><a class="nav-link" href="header-tamu.php?pt=janjitemusaya">Janji Temu Saya</a></li>
-                        <li class="nav-item"><a class="nav-link" href="logout-tamu.php"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
 
                         <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['sesi'] ?></span>
                                 <img class="img-profile rounded-circle" style="width:30px;" src="asset/img/undraw_profile.svg">
                             </a>
@@ -56,12 +60,12 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
                                     Logout
                                 </a>
                             </div>
-                        </li>
+                        </div>
                     </ul>
                 </div>
             </div>
         </nav>
-
+        
         <section class="home-section">
             <?php
             $pages_dir = 'pages-tamu';
@@ -94,7 +98,7 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
         <!-- Custom scripts for all pages-->
         <script src="asset/js/sb-admin-2.min.js"></script>
 
-        
+
 
     </body>
 
