@@ -13,7 +13,7 @@
         <div class="card shadow mb-4">
             <div class="card-body">
                 <!-- cetak pdf -->
-                <button type="button" class="btn btn-outline-success mb-3" style="float: right;">Cetak PDF</button>
+                <button type="button" class="btn btn-outline-success mb-3" style="float: right;"><a target="_blank" href="../ekspor_pdf/ekspor_pdf_anggota.php" style='text-decoration: none; color:black;'>Cetak PDF</a></button>
 
                 <div class="table-responsive">
                     <table class="table table-bordered" id="example" width="100%" cellspacing="0">
@@ -24,6 +24,7 @@
                                 <th>Nama</th>
                                 <th>Instansi</th>
                                 <th>Keperluan</th>
+                                <th>Tanda Tangan</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -42,6 +43,7 @@
                                         <td><?php echo $r_tampil_tamu['nama_tamu']; ?></td>
                                         <td><?php echo $r_tampil_tamu['instansi']; ?></td>
                                         <td><?php echo $r_tampil_tamu['keperluan']; ?></td>
+                                        <td><img src="<?php echo $r_tampil_tamu['tandatangan']; ?>" width=70px height=70px></td>
                                         <td>
                                             <a href="index.php?p=edit-tamu&id_tamu=<?php echo $r_tampil_tamu['id_tamu']; ?>"><i class="fas fa-edit"></i></a>
                                             <button type="button" class="btn"><a href="proses/hapus-tamu-proses.php?id_tamu=<?php echo $r_tampil_tamu['id_tamu']; ?>" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')" class="tombol"><i class="fa fa-trash mr-3" aria-hidden="true"></i></a></button>
