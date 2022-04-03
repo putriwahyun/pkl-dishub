@@ -42,47 +42,47 @@ $r_tampil_pegawai = mysqli_fetch_array($q_tampil_pegawai);
                         <div class="col-sm-10">
                             <div class="dropdown">
                                 <?php
-                                    if ($r_tampil_pegawai['bidang'] == "Sekretariat") {
-                                        echo "<select class='form-select form-select-lg mb-3' name='bidang' style='width:60%;height:38px' type='button' data-bs-toggle='dropdown' aria-label='.form-select-lg example'>
+                                if ($r_tampil_pegawai['bidang'] == "Sekretariat") {
+                                    echo "<select class='form-select form-select-lg mb-3' name='bidang' style='width:60%;height:50px;' type='button' data-bs-toggle='dropdown' aria-label='.form-select-lg example'>
                                         <option value='Sekretariat' selected>Sekretariat</option>
                                         <option value='Lalu Lintas'>Lalu Lintas</option>
                                         <option value='Angkutan'>Angkutan</option>
                                         <option value='Manajemen Perparkiran'>Manajemen Perparkiran</option>
                                         <option value='UPT. Pengelolaan Prasarana Perhubungan'>UPT. Pengelolaan Prasarana Perhubungan</option>
                                         </select>";
-                                    } elseif ($r_tampil_pegawai['bidang'] == "Lalu Lintas") {
-                                        echo "<select class='form-select form-select-lg mb-3' name='bidang' style='width:60%;height:38px' type='button' data-bs-toggle='dropdown' aria-label='.form-select-lg example'>
+                                } elseif ($r_tampil_pegawai['bidang'] == "Lalu Lintas") {
+                                    echo "<select class='form-select form-select-lg mb-3' name='bidang' style='width:60%;height:50px;' type='button' data-bs-toggle='dropdown' aria-label='.form-select-lg example'>
                                         <option value='Sekretariat'>Sekretariat</option>
                                         <option value='Lalu Lintas' selected>Lalu Lintas</option>
                                         <option value='Angkutan'>Angkutan</option>
                                         <option value='Manajemen Perparkiran'>Manajemen Perparkiran</option>
                                         <option value='UPT. Pengelolaan Prasarana Perhubungan'>UPT. Pengelolaan Prasarana Perhubungan</option>
                                         </select>";
-                                    } elseif ($r_tampil_pegawai['bidang'] == "Angkutan") {
-                                        echo "<select class='form-select form-select-lg mb-3' name='bidang' style='width:60%;height:38px' type='button' data-bs-toggle='dropdown' aria-label='.form-select-lg example'>
+                                } elseif ($r_tampil_pegawai['bidang'] == "Angkutan") {
+                                    echo "<select class='form-select form-select-lg mb-3' name='bidang' style='width:60%;height:50px;' type='button' data-bs-toggle='dropdown' aria-label='.form-select-lg example'>
                                         <option value='Sekretariat'>Sekretariat</option>
                                         <option value='Lalu Lintas'>Lalu Lintas</option>
                                         <option value='Angkutan' selected>Angkutan</option>
                                         <option value='Manajemen Perparkiran'>Manajemen Perparkiran</option>
                                         <option value='UPT. Pengelolaan Prasarana Perhubungan'>UPT. Pengelolaan Prasarana Perhubungan</option>
                                         </select>";
-                                    }  elseif ($r_tampil_pegawai['bidang'] == "Manajemen Perparkiran") {
-                                        echo "<select class='form-select form-select-lg mb-3' name='bidang' style='width:60%;height:38px' type='button' data-bs-toggle='dropdown' aria-label='.form-select-lg example'>
+                                } elseif ($r_tampil_pegawai['bidang'] == "Manajemen Perparkiran") {
+                                    echo "<select class='form-select form-select-lg mb-3' name='bidang' style='width:60%;height:50px;' type='button' data-bs-toggle='dropdown' aria-label='.form-select-lg example'>
                                         <option value='Sekretariat'>Sekretariat</option>
                                         <option value='Lalu Lintas'>Lalu Lintas</option>
                                         <option value='Angkutan'>Angkutan</option>
                                         <option value='Manajemen Perparkiran' selected>Manajemen Perparkiran</option>
                                         <option value='UPT. Pengelolaan Prasarana Perhubungan'>UPT. Pengelolaan Prasarana Perhubungan</option>
                                         </select>";
-                                    } elseif ($r_tampil_pegawai['bidang'] == "UPT. Pengelolaan Prasarana Perhubungan") {
-                                        echo "<select class='form-select form-select-lg mb-3' name='bidang' style='width:60%;height:38px' type='button' data-bs-toggle='dropdown' aria-label='.form-select-lg example'>
+                                } elseif ($r_tampil_pegawai['bidang'] == "UPT. Pengelolaan Prasarana Perhubungan") {
+                                    echo "<select class='form-select form-select-lg mb-3' name='bidang' style='width:60%;height:50px;' type='button' data-bs-toggle='dropdown' aria-label='.form-select-lg example'>
                                         <option value='Sekretariat'>Sekretariat</option>
                                         <option value='Lalu Lintas'>Lalu Lintas</option>
                                         <option value='Angkutan'>Angkutan</option>
                                         <option value='Manajemen Perparkiran'>Manajemen Perparkiran</option>
                                         <option value='UPT. Pengelolaan Prasarana Perhubungan' selected>UPT. Pengelolaan Prasarana Perhubungan</option>
                                         </select>";
-                                    } 
+                                }
                                 ?>
                             </div>
                         </div>
@@ -91,6 +91,7 @@ $r_tampil_pegawai = mysqli_fetch_array($q_tampil_pegawai);
                     <div class="row">
                         <div class="col-sm-2 mt-2">
                             <button type="submit" name="Submit" class="btn btn-dark">Simpan</button>
+                            <button type="submit" name="Submit" class="btn btn-danger" onclick="goBack()">Batal</button>
                         </div>
                     </div>
                 </form>
@@ -111,5 +112,11 @@ $r_tampil_pegawai = mysqli_fetch_array($q_tampil_pegawai);
     <!-- Bootstrap core JavaScript-->
     <script src="asset/vendor/jquery/jquery.min.js"></script>
     <script src="asset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 
 </body>

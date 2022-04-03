@@ -19,11 +19,12 @@
                                 <th>No</th>
                                 <th>Nama Tamu</th>
                                 <th>Menemui</th>
-                                <th>Asal Instansi</th>
+                                <th>Bidang</th>
                                 <th>Tanggal</th>
                                 <th>Waktu</th>
-                                <th>No Telp</th>
+                                <th>Asal Instansi</th>
                                 <th>Keperluan</th>
+                                <th>No Telp</th>
                                 <th>Keterangan</th>
                                 <th>Aksi</th>
                             </tr>
@@ -41,11 +42,12 @@
                                         <td><?php echo $nomor; ?></td>
                                         <td><?php echo $r_tampil_janji_temu['nama_tamu']; ?></td>
                                         <td><?php echo $r_tampil_janji_temu['nama_pegawai_dituju']; ?></td>
-                                        <td><?php echo $r_tampil_janji_temu['instansi']; ?></td>
+                                        <td><?php echo $r_tampil_janji_temu['bidang']; ?></td>
                                         <td><?php echo $r_tampil_janji_temu['tanggal_janji']; ?></td>
                                         <td><?php echo $r_tampil_janji_temu['waktu_temu']; ?></td>
-                                        <td><?php echo $r_tampil_janji_temu['no_telp']; ?></td>
+                                        <td><?php echo $r_tampil_janji_temu['instansi']; ?></td>
                                         <td><?php echo $r_tampil_janji_temu['keperluan']; ?></td>
+                                        <td><?php echo $r_tampil_janji_temu['no_telp']; ?></td>
                                         <td><?php echo $r_tampil_janji_temu['keterangan']; ?></td>
                                         <td>
                                             <?php

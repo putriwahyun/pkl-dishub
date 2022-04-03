@@ -26,8 +26,6 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
         <link href="asset/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Adding Dropdowns in Bootstrap via Data Attributes</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -38,7 +36,7 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <!-- Head -->
-                <img src="asset/img/logo.png" width="50" style="margin:10px">
+                <a href="header-tamu.php?pt=tamu"><img src="asset/img/logo.png" width="50" style="margin:10px"></a>
                 <h5 class="text-white">Dinas Perhubungan Kota Malang</h5>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,7 +45,7 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
                         <li class="nav-item"><a class="nav-link" href="header-tamu.php?pt=janjitemusaya">Janji Temu Saya</a></li>
 
                         <!-- Nav Item - User Information -->
-                        <div class="dropdown">
+                        <div class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['sesi'] ?></span>
                                 <img class="img-profile rounded-circle" style="width:30px;" src="asset/img/undraw_profile.svg">
@@ -65,7 +63,7 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
                 </div>
             </div>
         </nav>
-        
+
         <section class="home-section">
             <?php
             $pages_dir = 'pages-tamu';
@@ -85,6 +83,25 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
             ?>
         </section>
 
+        <!-- Logout Modal-->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Apakah Anda Yakin Akan Keluar?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">Pilih "Logout" Di Bawah Ini, Jika Anda Yakin Untuk Keluar.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="logout-tamu.php">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -97,8 +114,6 @@ if (isset($_SESSION['sesi']) && !empty($_SESSION['sesi'])) {
 
         <!-- Custom scripts for all pages-->
         <script src="asset/js/sb-admin-2.min.js"></script>
-
-
 
     </body>
 

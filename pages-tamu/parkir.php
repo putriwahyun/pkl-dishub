@@ -36,6 +36,10 @@ include 'proses/list-pegawai-parkir.php';
                             </select>
                         </div>
                         <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Bidang</label>
+                            <input type="text" name="bidang" value="Manajemen Perparkiran" class="form-control" id="formGroupExampleInput2" placeholder="" readonly>
+                        </div>
+                        <div class="mb-3">
                             <label for="formGroupExampleInput2" class="form-label">Nama Tamu</label>
                             <input type="text" name="nama_tamu" value="<?= $_SESSION['sesi'] ?>" class="form-control" id="formGroupExampleInput2" placeholder="" readonly>
                         </div>

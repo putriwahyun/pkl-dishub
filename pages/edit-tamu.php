@@ -72,6 +72,7 @@ $r_tampil_tamu = mysqli_fetch_array($q_tampil_tamu);
                                 <br />
                                 <br>
                                 <button type="submit" name="Submit" class="btn btn-primary">Simpan</button>
+                                <button type="submit" name="Submit" class="btn btn-danger" onclick="goBack()">Batal</button>
                             </div>
                         </form>
                     </table>
@@ -97,6 +98,10 @@ $r_tampil_tamu = mysqli_fetch_array($q_tampil_tamu);
             sig.signature('clear');
             $("#signature64").val('');
         });
+
+        function goBack() {
+            window.history.back();
+        }
     </script>
 
 </body>

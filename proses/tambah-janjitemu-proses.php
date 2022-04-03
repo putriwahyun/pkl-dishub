@@ -2,6 +2,8 @@
 include '../koneksi.php';
 
 $nama_pegawai_dituju = $_POST['nama_pegawai_dituju'];
+
+$bidang = $_POST['bidang'];
 $nama_tamu = $_POST['nama_tamu'];
 $instansi = $_POST['instansi'];
 $tanggal_janji = $_POST['tanggal_janji'];
@@ -15,7 +17,7 @@ if (isset($_POST['Submit'])) {
 
     
 
-    $sql = "INSERT INTO janjitemu VALUES('$id_janji_temu', '$nama_pegawai_dituju', '$nama_tamu', 
+    $sql = "INSERT INTO janjitemu VALUES('$id_janji_temu', '$bidang' , '$nama_pegawai_dituju', '$nama_tamu', 
             '$instansi', '$tanggal_janji', '$waktu_temu', '$no_telp', '$keperluan', '$keterangan')";
     $query = mysqli_query($db, $sql);
 

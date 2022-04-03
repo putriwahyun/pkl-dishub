@@ -16,10 +16,6 @@
     <link href="asset/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <link rel="stylesheet" href="asset/css/themefisher-fonts.min.css">
-    <link rel="stylesheet" href="asset/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="asset/css/main.css">
-
 </head>
 
 <body>
@@ -34,11 +30,12 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Menemui</th>
-                                    <th>Asal Instansi</th>
+                                    <th>Bidang</th>
                                     <th>Tanggal</th>
                                     <th>Waktu</th>
-                                    <th>No Telepon</th>
+                                    <th>Asal Instansi</th>
                                     <th>Keperluan</th>
+                                    <th>No Telepon</th>
                                     <th>Keterangan</th>
                                 </tr>
                             </thead>
@@ -55,11 +52,12 @@
                                         <tr>
                                             <td><?php echo $nomor; ?></td>
                                             <td><?php echo $r_tampil_janji_temu['nama_pegawai_dituju']; ?></td>
-                                            <td><?php echo $r_tampil_janji_temu['instansi']; ?></td>
+                                            <td><?php echo $r_tampil_janji_temu['bidang']; ?></td>
                                             <td><?php echo $r_tampil_janji_temu['tanggal_janji']; ?></td>
                                             <td><?php echo $r_tampil_janji_temu['waktu_temu']; ?></td>
-                                            <td><?php echo $r_tampil_janji_temu['no_telp']; ?></td>
+                                            <td><?php echo $r_tampil_janji_temu['instansi']; ?></td>
                                             <td><?php echo $r_tampil_janji_temu['keperluan']; ?></td>
+                                            <td><?php echo $r_tampil_janji_temu['no_telp']; ?></td>
                                             <td><?php echo $r_tampil_janji_temu['keterangan']; ?></td>
                                         </tr>
                                 <?php
@@ -96,19 +94,6 @@
 
     <!-- Page level custom scripts -->
     <script src="asset/js/demo/datatables-demo.js"></script>
-
-    <script src="asset/vendor/jquery-2.2.4.min.js"></script>
-    <script src="asset/vendor/bootstrap.min.js"></script>
-    <!-- <script src="js/jquery.easing.min.js"></script> -->
-    <script src="asset/js/isotope.pkgd.min.js"></script>
-    <script src="asset/js/jquery.nicescroll.min.js"></script>
-    <script src="asset/js/owl.carousel.min.js"></script>
-    <script src="asset/js/jquery-validation.min.js"></script>
-    <script src="asset/js/form.min.js"></script>
-    <script src="asset/js/main.js"></script>
 </body>
 
 </html>
-
-<style type="text/css">
-</style>
