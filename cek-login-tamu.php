@@ -18,7 +18,11 @@
             echo "<meta http-equiv='refresh' content='0; url=../header-tamu.php?pt=tamu'>";
         } else {
             extract($_POST);
-            $id_calon_tamu = null;
+
+            $query = mysqli_query($db, "SELECT id_calon_tamu AS id FROM calontamu ORDER BY id_calon_tamu DESC LIMIT 1");
+            $id = mysqli_fetch_array($query);
+
+            $id_calon_tamu = $id['id']+1;
 
             $sql = "INSERT INTO calontamu VALUES('$id_calon_tamu', '$user')";
             $query = mysqli_query($db, $sql);

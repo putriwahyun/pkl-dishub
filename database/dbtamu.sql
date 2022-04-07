@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 21, 2022 at 05:23 AM
+-- Generation Time: Apr 07, 2022 at 06:26 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -81,7 +81,14 @@ INSERT INTO `calontamu` (`id_calon_tamu`, `nama_calon_tamu`) VALUES
 (22, 'arghan'),
 (23, 'coba lagi'),
 (24, 'xavier'),
-(25, 'ellak');
+(25, 'ellak'),
+(26, 'putri'),
+(27, 'user100'),
+(28, 'user1001'),
+(29, 'user2002'),
+(30, 'heola annyeongg'),
+(90, 'mencobalagi'),
+(91, 'terakhirplis');
 
 -- --------------------------------------------------------
 
@@ -91,6 +98,7 @@ INSERT INTO `calontamu` (`id_calon_tamu`, `nama_calon_tamu`) VALUES
 
 CREATE TABLE `janjitemu` (
   `id_janji_temu` int(10) NOT NULL,
+  `bidang` varchar(50) NOT NULL,
   `nama_pegawai_dituju` varchar(50) NOT NULL,
   `nama_tamu` varchar(50) NOT NULL,
   `instansi` varchar(50) NOT NULL,
@@ -105,20 +113,13 @@ CREATE TABLE `janjitemu` (
 -- Dumping data for table `janjitemu`
 --
 
-INSERT INTO `janjitemu` (`id_janji_temu`, `nama_pegawai_dituju`, `nama_tamu`, `instansi`, `tanggal_janji`, `waktu_temu`, `no_telp`, `keperluan`, `keterangan`) VALUES
-(1, 'WIDAYATI, SE', '', 'diskominfo', '2022-01-22', '17:35', '09876543213', 'diskusi harian', 'Diterima'),
-(2, 'JOSE MANUEL DA P.BELO.SE', '', 'diskominfo', '2022-01-06', '18:44', '08123098736', 'nm.m', 'Diterima'),
-(3, 'SONI BACHTIAR, SE.MM', '', 'diskominfo', '2022-01-26', '19:35', '09876543213', 'bmbbmmb', 'Menunggu'),
-(4, 'SONI BACHTIAR, SE.MM', 'putri wahyu', 'diskominfo', '2022-01-22', '18:34', '09876543213', 'bnnnnb', 'Ditolak'),
-(5, '', 'putri wahyu', 'bappeda', '2022-01-28', '17:51', '08123098736', 'vnvnvn', 'Menunggu'),
-(6, '', 'putri wahyu', 'diskominfo', '2022-01-27', '18:55', '09876543213', 'bvnvn', 'Menunggu'),
-(7, '', 'putri wahyu', 'nmbnm', '2022-01-25', '18:55', '09876543213', 'nbmbm', 'Menunggu'),
-(8, '', 'putri wahyu', 'mn,', '2022-01-20', '19:57', '09876543213', 'bmnbnmn', 'Menunggu'),
-(9, 'Ir. NGOEDIJONO, MS.Tr', 'putri wahyu', 'diskominfo', '2022-01-25', '17:02', '08123098736', 'nbm', 'Menunggu'),
-(10, 'Ir. NGOEDIJONO, MS.Tr', '', 'diskominfo', '2022-01-21', '18:08', '081309876543', 'nmxnz', 'Menunggu'),
-(11, 'Ir. NGOEDIJONO, MS.Tr', 'putri wahyu', 'diskominfo', '2022-01-27', '19:13', '09876543213', 'nmn', 'Diterima'),
-(12, 'SLAMET RIADI', 'putri wahyu', 'bappeda', '2022-01-28', '19:26', '081309876543', 'nnbmnm', 'Ditolak'),
-(13, 'Zafa Andini', 'ellak', 'diskominfo', '2022-01-22', '14:29', '09876543213', 'ajklhslakhs', 'Ditolak');
+INSERT INTO `janjitemu` (`id_janji_temu`, `bidang`, `nama_pegawai_dituju`, `nama_tamu`, `instansi`, `tanggal_janji`, `waktu_temu`, `no_telp`, `keperluan`, `keterangan`) VALUES
+(4, '', 'SONI BACHTIAR, SE.MM', 'putri wahyu', 'diskominfo', '2022-01-22', '18:34', '09876543213', 'bnnnnb', 'Ditolak'),
+(9, '', 'Ir. NGOEDIJONO, MS.Tr', 'putri wahyu', 'diskominfo', '2022-01-25', '17:02', '08123098736', 'nbm', 'Menunggu'),
+(11, '', 'Ir. NGOEDIJONO, MS.Tr', 'putri wahyu', 'diskominfo', '2022-01-27', '19:13', '09876543213', 'nmn', 'Diterima'),
+(12, '', 'SLAMET RIADI', 'putri wahyu', 'bappeda', '2022-01-28', '19:26', '081309876543', 'nnbmnm', 'Ditolak'),
+(13, '', 'Zafa Andini', 'ellak', 'diskominfo', '2022-01-22', '14:29', '09876543213', 'ajklhslakhs', 'Ditolak'),
+(14, 'Lalu Lintas', 'Ir. NGOEDIJONO, MS.Tr', 'morgan', 'diskominfo', '2022-04-06', '16:50', '08876543213', 'janji penting', 'Menunggu');
 
 -- --------------------------------------------------------
 
@@ -280,13 +281,13 @@ CREATE TABLE `tamu` (
 --
 
 INSERT INTO `tamu` (`id_tamu`, `tanggal`, `nama_tamu`, `instansi`, `keperluan`, `tandatangan`) VALUES
-(1, '2022-01-14', 'meghan', 'diskominfo', 'kunjungan bulanan', '../asset/tandatanganmeghan.png'),
-(2, '2022-01-14', 'zella', 'diskominfo', 'kunjungan', '../asset/tandatanganzella.png'),
-(3, '2022-01-14', 'meghan2', 'diskominfo', 'kunjungan', '../tandatangan-tamu meghan2.png'),
+(1, '2022-01-14', 'meghan', 'diskominfo', 'kunjungan bulanan', '../asset/tandatangan/nicken.png'),
+(2, '2022-01-14', 'zella', 'diskominfo', 'kunjungan', '../asset/tandatangan/nicken.png'),
+(3, '2022-01-14', 'meghan2', 'diskominfo', 'kunjungan', '../asset/tandatangan/nicken.png'),
 (4, '2022-01-14', 'meghan', 'diskominfo', 'ccc', '../asset/tandatangan/meghan.png'),
 (5, '0000-00-00', 'meghan', 'diskominfo', 'ajhs', '../asset/tandatangan/meghan.png'),
 (6, '14-01-2022', 'meghan', 'diskominfo', 'ddd', '../asset/tandatangan/meghan.png'),
-(7, '15-01-2022', 'zella', 'bappeda', 'kunjungan', 'tandatangan zella.png'),
+(7, '15-01-2022', 'zella', 'bappeda', 'kunjungan', '../asset/tandatangan/nicken.png'),
 (9, '15-01-2022', 'wilona nata', 'diskominfo2', 'pertemuan 2', '../asset/tandatangan/wilona nata.png'),
 (10, '20-01-2022', 'nicken octaviana', 'poltek', 'pkl', '../asset/tandatangan/nicken.png');
 
@@ -338,13 +339,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `calontamu`
 --
 ALTER TABLE `calontamu`
-  MODIFY `id_calon_tamu` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id_calon_tamu` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
 
 --
 -- AUTO_INCREMENT for table `janjitemu`
 --
 ALTER TABLE `janjitemu`
-  MODIFY `id_janji_temu` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_janji_temu` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `pegawai`
@@ -356,7 +357,7 @@ ALTER TABLE `pegawai`
 -- AUTO_INCREMENT for table `tamu`
 --
 ALTER TABLE `tamu`
-  MODIFY `id_tamu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_tamu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
